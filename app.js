@@ -8,7 +8,7 @@ require('dotenv').config()
 
 const client_id = process.env.client_id
 const client_secret = process.env.client_secret
-const redirect_uri = process.env.redirect_uri
+const redirect_uri = process.env.redirect_urihe
  // Your redirect uri
 
 
@@ -29,6 +29,11 @@ const app = express();
 app.use(express.static(__dirname + '/public'))
    .use(cors())
    .use(cookieParser());
+
+
+app.get('/', function(req, res) {
+  res.send('working')
+})
 
 app.get('/login', function(req, res) {
 
@@ -128,3 +133,5 @@ app.get('/refresh_token', function(req, res) {
 
 console.log('Listening on 8888');
 app.listen(8888);
+
+<infowindow propname = "prop"></infowindow>
