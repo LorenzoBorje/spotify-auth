@@ -8,7 +8,7 @@ require('dotenv').config()
 
 const client_id = process.env.client_id
 const client_secret = process.env.client_secret
-const redirect_uri = process.env.redirect_urihe
+const redirect_uri = process.env.redirect_uri
  // Your redirect uri
 
 
