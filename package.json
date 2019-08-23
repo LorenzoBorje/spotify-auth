@@ -14,5 +14,8 @@
   "main": "app.js",
   "author": "LB Borje",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "scripts": {
+    "start": "node app.js"
+  }
 }
